@@ -1,6 +1,41 @@
 <template>
   <div id="app">
-    <router-view />
+    <Row type="flex" class="layout">
+      <i-col span="4" class="navbar-wrapper">
+        <Navbar />
+      </i-col>
+      <i-col span="20" class="main-panel">
+        <router-view />
+      </i-col>
+    </Row>
   </div>
 </template>
 
+<script>
+import Navbar from './components/Navbar.vue'
+
+export default {
+  components: {
+    Navbar,
+  }
+}
+</script>
+
+
+<style scoped>
+#app {
+  min-width: 1000px;
+  height: 100vh;
+}
+.layout {
+  border: 1px solid #d7dde4;
+  background: #f5f7f9;
+  position: relative;
+}
+.navbar-wrapper {
+  min-width: 150px;
+}
+.main-panel {
+  min-width: auto;
+}
+</style>
