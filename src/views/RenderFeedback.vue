@@ -121,7 +121,6 @@ export default {
     setFeedbackData() {
       const feedbackData = JSON.parse(localStorage.getItem('feedbackData')) || []
       if (feedbackData.length === 0) {
-        console.log(feedbackData.length)
         localStorage.setItem('feedbackData', JSON.stringify(this.data1))
         return
       }

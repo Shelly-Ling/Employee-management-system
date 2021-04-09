@@ -94,7 +94,6 @@ export default {
   },
   methods: {
     setＥmployeeListData() {
-      console.log('setData')
       const employeeList = JSON.parse(localStorage.getItem('employeeList')) || []
       if (employeeList.length === 0) {
         localStorage.setItem('employeeList', JSON.stringify(this.employeeList))
