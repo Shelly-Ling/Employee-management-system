@@ -134,12 +134,8 @@ export default {
           this.$Message.success('提交成功!');
 
           const data = { ...this.formValidate }
-          console.log('this.formValidate', this.formValidate)
           const employeeList = JSON.parse(localStorage.getItem('employeeList')) || []
-          console.log('employeeList', employeeList)
-          console.log('data', data)
           employeeList.push(data)
-          console.log('employeeList', employeeList)
           localStorage.setItem('employeeList', JSON.stringify(employeeList))
 
         } else {

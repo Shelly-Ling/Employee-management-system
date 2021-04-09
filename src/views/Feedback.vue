@@ -53,10 +53,8 @@ export default {
 
       const localStorageFeedbacks = JSON.parse(localStorage.getItem('feedbackData')) || []
 
-      console.log('localStorageFeedbacks', localStorageFeedbacks)
       localStorageFeedbacks.push(feedbackText)
 
-      console.log('localStorageFeedbacks', localStorageFeedbacks)
 
       localStorage.setItem('feedbackData', JSON.stringify(localStorageFeedbacks))
 
