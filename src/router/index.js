@@ -5,7 +5,7 @@ import NotFound from '../views/NotFound.vue'
 import Regist from '../views/Regist.vue'
 import Employee from '../views/employee.vue'
 import Performance from '../views/Performance.vue'
-import Career from '../views/Career.vue'
+import RenderFeedback from '../views/RenderFeedback.vue'
 import Feedback from '../views/Feedback.vue'
 import WorkReport from '../views/WorkReport.vue'
 
@@ -40,9 +40,9 @@ const routes = [
     component: Performance
   },
   {
-    path: '/career',
-    name: 'career',
-    component: Career
+    path: '/renderFeedback',
+    name: 'render-feedback',
+    component: RenderFeedback
   }, {
     path: '/feedback',
     name: 'feedback',

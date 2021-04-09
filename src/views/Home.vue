@@ -10,19 +10,54 @@
         <Breadcrumb-item>Breadcrumb</Breadcrumb-item>
       </Breadcrumb>
     </div>
+    <h1>Welcome</h1>
     <div class="layout-content">
-      <div class="layout-content-main">内容区域</div>
+      <div class="layout-content-main">
+        <Carousel autoplay v-model="value2">
+          <Carousel-item>
+            <img
+              src="https://lh3.google.com/u/0/d/1eop11abjbVp7rShPRTHGQhleIEh4_TVN=w2250-h1476-iv1"
+              alt=""
+            />
+          </Carousel-item>
+          <Carousel-item>
+            <img
+              src="https://lh3.google.com/u/0/d/17C4ZOEJ9BYb0UKRmlpU0LBokg57S10G_=w2000-h1920-iv1"
+              alt=""
+            />
+          </Carousel-item>
+          <Carousel-item>
+            <img
+              src="https://lh3.google.com/u/0/d/1yjvrnJvzdoI60KYmKJt64yfPfviEbTyH=w2000-h1920-iv1"
+              alt=""
+            />
+          </Carousel-item>
+          <Carousel-item>
+            <img
+              src="https://lh3.google.com/u/0/d/1EW-_CKu9MLenYM_hovORSfmxJgbP3dJc=w2000-h1920-iv1"
+              alt=""
+            />
+          </Carousel-item>
+        </Carousel>
+      </div>
     </div>
     <div class="layout-copy">2011-2016 &copy; TalkingData</div>
   </div>
 </template>
 <script>
 export default {
-
+  data() {
+    return {
+      value2: 0
+    }
+  }
 }
 </script>
 
 <style scoped>
+h1 {
+  margin: 10px 30px;
+}
 .layout {
   min-width: auto;
   border: 1px solid #d7dde4;

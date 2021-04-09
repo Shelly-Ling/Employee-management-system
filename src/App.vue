@@ -4,8 +4,10 @@
       <i-col span="4" class="navbar-wrapper">
         <Navbar />
       </i-col>
-      <i-col span="20" class="main-panel">
-        <router-view />
+      <i-col span="20">
+        <div id="main-panel" class="main-panel">
+          <router-view />
+        </div>
       </i-col>
     </Row>
   </div>
@@ -35,7 +37,10 @@ export default {
 .navbar-wrapper {
   min-width: 150px;
 }
-.main-panel {
+#main-panel {
+  width: 100%;
+  height: 100vh;
   min-width: auto;
+  overflow: scroll;
 }
 </style>
