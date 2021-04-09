@@ -49,6 +49,14 @@ export default {
   },
   methods: {
     handleSubmit() {
+      if (this.formData.name.trim().length === 0) {
+        alert('請輸入姓名')
+        return
+      }
+      if (this.formData.feedback.trim().length === 0) {
+        alert('請輸入反映內容')
+        return
+      }
       const feedbackText = { ...this.formData }
 
       const localStorageFeedbacks = JSON.parse(localStorage.getItem('feedbackData')) || []
