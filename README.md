@@ -1,4 +1,9 @@
 # vue-iview-project
+註冊人員、反映意見、回覆意見
+查看個人業績完成度
+專案人力規劃
+
+使用iview套件
 
 ## Project setup
 ```
@@ -20,5 +25,3 @@ npm run build
 npm run lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
