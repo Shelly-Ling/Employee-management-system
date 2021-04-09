@@ -3,6 +3,8 @@
 
 使用iview套件
 
+https://shelly-ling.github.io/Employee-management-system/
+
 ## Project setup
 ```
 npm install
